@@ -1,0 +1,35 @@
+{
+  "name": "react-transform",
+  "version": "0.0.1",
+  "description": "Compile react templates for server side rendering",
+  "main": "lib/render.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/litek/react-transform.git"
+  },
+  "keywords": [
+    "react",
+    "views",
+    "templates",
+    "render"
+  ],
+  "author": "Ketil Albertsen <ketil@syscom.as>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/litek/react-transform/issues"
+  },
+  "homepage": "https://github.com/litek/react-transform",
+  "peerDependencies": {
+    "react-tools": "~0.10.0"
+  },
+  "devDependencies": {
+    "react": "^0.10.0",
+    "should": "^3.2.0",
+    "mocha": "^1.18.2",
+    "gulp": "^3.6.0",
+    "gulp-jshint": "^1.5.1"
+  }
+}
