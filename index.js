@@ -29,7 +29,7 @@ var transform = module.exports = function(file) {
     return path.extname(file) === transform.options.ext ? transform(file) : require(file);
   };
 
-  vm.runInNewContext(js, sandbox);
+  vm.runInNewContext(js, sandbox, file);
   var fn = sandbox.module.exports;
 
   if (transform.options.cache) {
