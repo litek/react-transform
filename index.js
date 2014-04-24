@@ -18,8 +18,9 @@ var transform = module.exports = function(file) {
 
   var sandbox = {};
   sandbox.console = console;
-  sandbox.window = undefined;
-  sandbox.document = undefined;
+  sandbox.global = global;
+  sandbox.window = global.window;
+  sandbox.document = global.document;
   sandbox.React = React;
   sandbox.module = {exports: {}};
   sandbox.exports = sandbox.module.exports;
